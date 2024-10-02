@@ -1,0 +1,4 @@
+.venv/
+trainer/code_prompts.json
+trainer/auth.json
+*.pyc
