@@ -38,7 +38,7 @@ def error_line_to_training_dict(lineid: int, token_list: list[str]) -> dict:
     token_dict = {}
     for i, tokens in enumerate(lines):
         for token in tokens:
-            token_dict[token] = -1 if i-1 == lineid else 1
+            token_dict[token] = -1 if i-1 == lineid and lineid is not -1 else 1
     return token_dict
 
 def is_correct(response: list[str]):

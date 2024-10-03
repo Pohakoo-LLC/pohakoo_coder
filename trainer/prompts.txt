@@ -1,0 +1,169 @@
+Write a Python function that checks if a given number is prime.
+Write a Python function that generates the Fibonacci sequence up to a given number.
+Write a Python function that checks if a given string is a palindrome.
+Write a Python function that returns the factorial of a given number.
+Write a Python function that returns the sum of the digits of a given number.
+Write a Python function that reverses a given string.
+Write a Python function that counts the number of vowels in a given string.
+Write a Python function that returns the nth element of the Fibonacci sequence.
+Write a Python function that finds the largest number in a list of integers.
+Write a Python function that checks whether a given number is odd or even.
+Write a Python function that sorts a list of integers using the bubble sort algorithm.
+Write a Python function that checks whether a given year is a leap year.
+Write a Python function that checks if two given strings are anagrams.
+Write a Python function that takes two numbers and an operator (+, -, *, /) and returns the result.
+Write a Python function that removes duplicate elements from a list.
+Write a Python function that finds the greatest common divisor (GCD) of two given numbers.
+Write a Python function that finds the least common multiple (LCM) of two given numbers.
+Write a Python function that capitalizes the first letter of each word in a string.
+Write a Python function that encrypts a string using a Caesar cipher.
+Write a Python function that counts the number of words in a given string.
+Write a Python function that counts the number of digits in a given number.
+Write a Python function that returns all prime factors of a given number.
+Write a Python function that checks if a given number is an Armstrong number.
+Write a Python function that calculates the area of a triangle given its base and height.
+Write a Python function that returns the sum of all elements in a list.
+Write a Python function that returns a list of unique elements from the input list.
+Write a Python function that calculates the hypotenuse of a right triangle given the lengths of the other two sides.
+Write a Python function that reverses the order of words in a sentence.
+Write a Python function that returns the sum of the first n Fibonacci numbers.
+Write a Python function that checks if a given number is a perfect number.
+Write a Python function that converts a character to its ASCII value and vice versa.
+Write a Python function that flattens a nested list into a single list.
+Write a Python function that returns the sum of squares of the first n natural numbers.
+Write a Python function that finds the longest word in a list of words.
+Write a Python function that solves a quadratic equation given its coefficients.
+Write a Python function that compresses a string by using the counts of repeated characters (e.g., aabcc -> a2b1c2).
+Write a Python function that finds the second largest number in a list.
+Write a Python function that finds the missing number from a sequence of integers.
+Write a Python function that checks if a substring exists within a given string.
+Write a Python function that adds two 2D matrices.
+Write a Python function that multiplies two 2D matrices.
+Write a Python function that transposes a 2D matrix.
+Write a Python function that checks if one string is a rotation of another.
+Write a Python function that calculates the Hamming distance between two strings of equal length.
+Write a Python function that converts a binary number to decimal.
+Write a Python function that converts a decimal number to binary.
+Write a Python function that converts an integer to its Roman numeral equivalent.
+Write a Python function that generates Pascal's triangle up to a given number of rows.
+Write a Python function that returns the sum of all prime numbers up to a given number.
+Write a Python function that removes all vowels from a given string.
+Write a Python function that counts the occurrences of a given character in a string.
+Write a Python function that finds the common elements between two lists.
+Write a Python function that flattens a list of lists into a single list.
+Write a Python function that checks if a given sentence is a pangram (contains every letter of the alphabet at least once).
+Write a Python function that counts the frequency of each letter in a string.
+Write a Python function that generates a random alphanumeric password of a given length.
+Write a Python function that calculates simple interest given principal, rate, and time.
+Write a Python function that checks if all elements in a list are unique.
+Write a Python function that converts all letters in a string to lowercase.
+Write a Python function that calculates the sum of the first n odd numbers.
+Write a Python function that checks if a string contains only numeric digits.
+Write a Python function that returns a new list where each element is the cumulative sum of the elements up to that index in the input list.
+Write a Python function that reverses the digits of a given number.
+Write a Python function that finds the maximum difference between any two elements in a list.
+Write a Python function that checks if a string has balanced parentheses.
+Write a Python function that converts a string into a list of words.
+Write a Python function that counts the occurrences of a word in a sentence.
+Write a Python function that finds all divisors of a given number.
+Write a Python function that counts the number of uppercase letters in a string.
+Write a Python function that finds the median of a list of numbers.
+Write a Python function that returns all prime numbers up to a given number.
+Write a Python function that returns the nth prime number.
+Write a Python function that reverses the order of words in a sentence.
+Write a Python function that returns the square root of a given number without using external libraries.
+Write a Python function that counts the number of consonants in a given string.
+Write a Python function that returns the sum of all even numbers up to a given number.
+Write a Python function that returns the sum of all odd numbers up to a given number.
+Write a Python function that finds the smallest number in a list.
+Write a Python function that counts both vowels and consonants in a string.
+Write a Python function that reverses the digits of a given integer.
+Write a Python function that returns a new list where each element is squared.
+Write a Python function that checks if a given number is a power of two.
+Write a Python function that returns the sum of all multiples of 3 or 5 up to a given number.
+Write a Python function that returns the most frequent element (mode) in a list.
+Write a Python function that finds the second smallest number in a list.
+Write a Python function that calculates the sum of the digits of the factorial of a given number.
+Write a Python function that removes all whitespace characters from a string.
+Write a Python function that replaces all vowels in a string with a specified symbol.
+Write a Python function that checks if two strings are rotations of each other.
+Write a Python function that returns the nth digit of Pi (using a predefined string of Pi digits).
+Write a Python function that returns a list of squares from 1 to a given number.
+Write a Python function that calculates the sum of the cubes of a number's digits.
+Write a Python function that checks if a given list is sorted in ascending order.
+Write a Python function that swaps two elements in a list at given positions.
+Write a Python function that counts the occurrences of a specific word in a string.
+Write a Python function that inserts an element into its proper place in a sorted list.
+Write a Python function that removes duplicate characters from a given string.
+Write a Python function that takes two lists and returns a new list with the element-wise sum.
+Write a Python function that reverses each word in a string individually.
+Write a Python function that returns the common divisors of two numbers.
+Write a Python function that finds unique elements in two given lists.
+Write a Python function that returns the sum of the first n prime numbers.
+Write a Python function that checks if all elements in a list are odd.
+Write a Python function that counts the number of prime numbers in a list.
+Write a Python function that finds the longest increasing sequence in a list of numbers.
+Write a Python function that removes all digits from a given string.
+Write a Python function that checks if two strings are permutations of each other.
+Write a Python function that lists all perfect squares less than a given number.
+Write a Python function that finds the smallest prime factor of a given number.
+Write a Python function that calculates the sum of the first n odd Fibonacci numbers.
+Write a Python function that multiplies two matrices.
+Write a Python function that checks if a string contains every letter of the alphabet at least once.
+Write a Python function that returns the sum of the first n even numbers.
+Write a Python function that finds the largest odd number in a list.
+Write a Python function that finds the smallest even number in a list.
+Write a Python function that removes all non-alphabetic characters from a string.
+Write a Python function that checks if a string is a valid palindrome after removing non-alphabetic characters.
+Write a Python function that returns the sum of all divisors of a number.
+Write a Python function that checks if a number is a palindrome.
+Write a Python function that calculates the sum of an alternating series like 1 - 2 + 3 - 4 + ... up to n.
+Write a Python function that returns the length of a string excluding spaces.
+Write a Python function that returns the common elements from three lists.
+Write a Python function that generates a multiplication table for a given number.
+Write a Python function that returns the sum of the first n natural numbers.
+Write a Python function that finds the missing letters in a given string to complete the alphabet.
+Write a Python function that converts a given temperature in Celsius to Fahrenheit.
+Write a Python function that converts a given temperature in Fahrenheit to Celsius.
+Write a Python function that counts the number of capital letters in a string.
+Write a Python function that returns all permutations of a given string.
+Write a Python function that returns the sum of alternating Fibonacci numbers.
+Write a Python function that converts a string to title case (first letter of each word capitalized).
+Write a Python function that returns a list of the factorials of the elements of the input list.
+Write a Python function that checks how many characters two strings have in common.
+Write a Python function that checks if a list contains any duplicate elements.
+Write a Python function that checks if a number is abundant (sum of divisors is greater than the number).
+Write a Python function that generates a list of even numbers up to a given number.
+Write a Python function that checks if all elements in a list are positive.
+Write a Python function that finds the median of the combined elements of two lists.
+Write a Python function that returns a new list where each element is the cumulative product of the elements up to that index.
+Write a Python function that returns the nth triangular number.
+Write a Python function that converts a binary string to its decimal equivalent.
+Write a Python function that calculates the harmonic mean of a list of numbers.
+Write a Python function that performs binary search on a sorted list.
+Write a Python function that finds the first duplicate element in a list.
+Write a Python function that finds the longest common prefix among a list of strings.
+Write a Python function that generates a random integer within a specified range (without using external libraries).
+Write a Python function that finds all pairs in a list that sum to a specific target.
+Write a Python function that returns the next prime number after a given number.
+Write a Python function that converts a string into snake_case format.
+Write a Python function that returns all Armstrong numbers between two given numbers.
+Write a Python function that returns the largest element in a list divisible by 3.
+Write a Python function that finds the first repeating character in a given string.
+Write a Python function that returns the sum of elements at even indices in a list.
+Write a Python function that checks if a string contains only alphabetic characters.
+Write a Python function that returns the sum of the factorials of the digits of a number.
+Write a Python function that finds the longest palindrome substring in a given string.
+Write a Python function that checks if a list is the same forward and backward.
+Write a Python function that checks if a string contains any repeating substrings.
+Write a Python function that returns the number of trailing zeros in the factorial of a given number.
+Write a Python function that returns the length of the longest substring without repeating characters.
+Write a Python function that calculates the sum of a geometric series with a given initial term, ratio, and number of terms.
+Write a Python function that calculates the sum of an arithmetic series with a given initial term, difference, and number of terms.
+Write a Python function that converts a decimal number into Roman numerals.
+Write a Python function that calculates the sum of digits raised to their respective powers (e.g., for 123, calculate 1^1 + 2^2 + 3^3).
+Write a Python function that checks if two numbers are coprime (i.e., their GCD is 1).
+Write a Python function that returns all pairs of coprime numbers from a given list.
+Write a Python function that calculates the digital root of a number (sum of digits until a single digit is obtained).
+Write a Python function that checks if a list contains consecutive numbers in any order.
+Write a Python function that checks if a given number is a perfect cube.

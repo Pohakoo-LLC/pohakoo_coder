@@ -24,7 +24,7 @@ def generate_and_evaluate(input_text):
     inputs = tokenizer(input_text, return_tensors="pt", padding=True).to(device)
     
     # Generate text using the model
-    outputs = model.generate(inputs.input_ids, max_length=250, attention_mask=inputs.attention_mask)
+    outputs = model.generate(inputs.input_ids, max_length=10000, attention_mask=inputs.attention_mask)
     
     # Decode the generated text
     response = tokenizer.decode(outputs[0], skip_special_tokens=True)
@@ -79,8 +79,8 @@ def fine_tune_with_rl(input_texts, learning_rate=5e-5, epochs=epochs):
         print(f"Epoch {epoch + 1}/{epochs}, Loss: {total_loss}, Total Reward: {total_reward}")
 
 # Sample training data (list of prompts)
-with open('config.json', 'r') as f:
-    input_texts = json.load(f)['prompts']
+with open('prompts.txt', 'r') as f:
+    input_texts = f.readlines()
 
 # Fine-tune the model with reinforcement learning
 fine_tune_with_rl(input_texts)
