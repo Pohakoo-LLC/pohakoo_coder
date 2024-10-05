@@ -9,9 +9,9 @@ import logging
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Load Code Llama 70B model and tokenizer
-model_name = 'meta-llama/CodeLlama-70b-Python-hf'
-model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32)
+# Load pre-trained Phi 3 mini 4k model and tokenizer
+model_name = 'microsoft/Phi-3-mini-4k-instruct'
+model = AutoModelForCausalLM.from_pretrained(model_name)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 # Set padding token to be the same as EOS token if needed
@@ -80,7 +80,7 @@ def fine_tune_with_rl(input_texts, learning_rate=5e-5, epochs=epochs):
             loss.backward()
             optimizer.step()
             # Display percent completion
-            i += 1
+            i+=1
             percent_complete = i / len(input_texts) * 100
             logging.info(f"Epoch {epoch}/{epochs}: {percent_complete:.2f}% complete")
 

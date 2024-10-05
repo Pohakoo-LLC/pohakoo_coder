@@ -1,16 +1,20 @@
 import torch
-from transformers import GPT2LMHeadModel, GPT2Tokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer
 from torch.optim import AdamW
 from torch.nn import CrossEntropyLoss
 from validator import is_correct
 import json
+import logging
 
-# Load pre-trained GPT-2 model and tokenizer
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+# Load GPT-2 model and tokenizer
 model_name = 'gpt2'
-model = GPT2LMHeadModel.from_pretrained(model_name)
-tokenizer = GPT2Tokenizer.from_pretrained(model_name)
+model = AutoModelForCausalLM.from_pretrained(model_name)
+tokenizer = AutoTokenizer.from_pretrained(model_name)
 
-# Set padding token to be the same as EOS token
+# GPT-2 doesn't have a pad token, so we set it to EOS token (end of sentence)
 tokenizer.pad_token = tokenizer.eos_token
 model.config.pad_token_id = model.config.eos_token_id
 
@@ -24,13 +28,13 @@ def generate_and_evaluate(input_text):
     inputs = tokenizer(input_text, return_tensors="pt", padding=True).to(device)
     
     # Generate text using the model
-    outputs = model.generate(inputs.input_ids, max_length=10000, attention_mask=inputs.attention_mask)
+    outputs = model.generate(inputs.input_ids, max_length=256, attention_mask=inputs.attention_mask)
     
     # Decode the generated text
     response = tokenizer.decode(outputs[0], skip_special_tokens=True)
     
     # Pass the full response to the reward function for evaluation
-    reward = 1 if is_correct(response.split(), isTest=False) else -1  # Full response passed to is_correct
+    reward = 1 if is_correct(response.split()) else -1  # Full response passed to is_correct
 
     return response, reward
 
@@ -48,6 +52,7 @@ def fine_tune_with_rl(input_texts, learning_rate=5e-5, epochs=epochs):
     for epoch in range(epochs):
         total_loss = 0
         total_reward = 0
+        i = 0
 
         for input_text in input_texts:
             input_text = f"System: {system_text}\nUser: {input_text}"
@@ -74,9 +79,13 @@ def fine_tune_with_rl(input_texts, learning_rate=5e-5, epochs=epochs):
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
+            # Display percent completion
+            i += 1
+            percent_complete = i / len(input_texts) * 100
+            logging.info(f"Epoch {epoch}/{epochs}: {percent_complete:.2f}% complete")
 
         # Logging at the end of each epoch
-        print(f"Epoch {epoch + 1}/{epochs}, Loss: {total_loss}, Total Reward: {total_reward}")
+        logging.info(f"Epoch {epoch + 1}/{epochs}, Loss: {total_loss}, Total Reward: {total_reward}")
 
 # Sample training data (list of prompts)
 with open('prompts.txt', 'r') as f:
