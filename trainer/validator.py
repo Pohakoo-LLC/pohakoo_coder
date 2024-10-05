@@ -33,16 +33,19 @@ def split_list(list, splitter):
             buffer_list = []
     return out_list
 
-def error_line_to_training_dict(lineid: int, token_list: list[str]) -> dict:
+def error_line_to_training_dict(lineid: int, token_list: list[str], is_blank: bool = False) -> dict:
     lines = split_list(token_list, '\n')
     token_dict = {}
     for i, tokens in enumerate(lines):
         for token in tokens:
-            token_dict[token] = -1 if i-1 == lineid and lineid is not -1 else 1
+            token_dict[token] = -1 if (i-1 == lineid and lineid is not -1) or is_blank else 1
     return token_dict
 
 def is_correct(response: list[str]):
     script = extract_python(response)
+    is_blank = False
+    if script.strip() == "":
+        is_blank = True
     error_line = run_script(script)
-    out_dict = error_line_to_training_dict(error_line, response)
+    out_dict = error_line_to_training_dict(error_line, response, is_blank)
     return out_dict
