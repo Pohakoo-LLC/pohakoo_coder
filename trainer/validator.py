@@ -19,7 +19,7 @@ def run_script(script: str) -> int:
         for line in e.stderr.split('\n'):
             match = re.search(r'File "<string>", line (\d+)', line)
             if match:
-                error_line = int(match.group(1))
+                error_line = int(match.group(1))-1
                 break
         return error_line if error_line is not None else -1
     
